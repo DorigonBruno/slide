@@ -42,3 +42,17 @@ img {
   opacity: 1;
   transform: scale(1);
 }
+
+.arrow-nav{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.arrow-nav button{
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  font-weight: normal;
+}
