@@ -32,10 +32,10 @@ img {
   margin: 0 20px;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-  opacity: .8;
-  transform: scale(.8);
-  transition: .4s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
 }
 
 .slide li.active {
@@ -43,16 +43,37 @@ img {
   transform: scale(1);
 }
 
-.arrow-nav{
+.arrow-nav {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.arrow-nav button{
+.arrow-nav button {
   width: 50px;
   height: 20px;
   font-size: 10px;
   font-weight: normal;
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #fb5;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control="slide"] li.active a, [data-control="slide"] li a:hover  {
+  background: #e54;
 }
